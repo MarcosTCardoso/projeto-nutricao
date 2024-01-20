@@ -5,3 +5,7 @@ function clickMenu() {
         nav.style.display = 'block'
     }
 }
+
+function calcularImc() {
+    var peso = 
+}

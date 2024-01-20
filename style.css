@@ -22,7 +22,7 @@ header {
     font-size: 12px;
     border-bottom: 1px solid var(--cor4);
 }
-
+/* Main page*/
 div#first-line {
     display: flex;
     align-items: center;
@@ -70,7 +70,8 @@ menu#nav ul li {
     list-style-type: none;
     border-top: 1px solid var(--cor4);
     display: inline-block;
-    width: calc((100% - ((4 - 1) * 3px)) / 4);
+    /* O 5 dentro do parente principal e depois da divisão serve pra definir o tamanho dos itens dentro da barra de navegação*/
+    width: calc((100% - ((5 - 1) * 3px)) / 5);
     box-sizing: border-box;
 }
 menu#nav ul li:last-child {
@@ -191,4 +192,42 @@ section#informacao div#funcionamento ul li {
 
 section#informacao div#funcionamento p.adpt {
     padding-top: 17.5px;
+}
+
+/* calculo page*/
+
+main div#Calculadora {
+    background-color: var(--cor3);
+    display: block;
+    margin: auto;
+    padding: 35px;
+    height: 350px;
+    width: 850px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 5px black;
+}
+
+main div#Calculadora div#imc {
+    background-color: var(--cor2);
+    width: 250px;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px black;
+}
+
+main div#Calculadora div#imc p {
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+main div#Calculadora div#imc button {
+    font-size: 12px;
+    background-color: var(--cor3);
+    width: 100px;
+    border-radius: 50px;
 }
