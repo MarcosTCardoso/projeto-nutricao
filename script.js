@@ -7,5 +7,7 @@ function clickMenu() {
 }
 
 function calcularImc() {
-    var peso = 
+    let peso = document.querySelector('input#peso').value
+    let altura = document.querySelector('input#altura').value
+    alert(`Esse é seu peso: ${peso} e sua altura é de ${altura}`)
 }
